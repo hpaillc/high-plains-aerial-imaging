@@ -26,3 +26,6 @@ Keep existing files such as:
 
 Commit message:
 `Build V2.3 agriculture and enterprise homepage`
+
+## Refinement
+The Agriculture/Enterprise pathway cards were tightened so the supplied brand image emphasizes the drones, Wyoming landscape and industries instead of repeating the large logo lettering behind the card copy.
