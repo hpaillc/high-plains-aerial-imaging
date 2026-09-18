@@ -1,14 +1,12 @@
-# High Plains Aerial Imaging — Homepage V2.1
+# High Plains Aerial Imaging — Homepage V2.2
 
-V2.1 uses the owner's uploaded High Plains Aerial Imaging brand graphic.
+V2.2 uses the supplied High Plains Aerial Imaging brand graphic while keeping the hero cleaner:
+- The full logo graphic is moved into a dedicated brand section.
+- The hero uses a cleaner crop with Wyoming/drone/agriculture/energy imagery.
+- The right-side Aerial Intelligence panel no longer repeats the full logo.
+- The hero copy includes inspections.
+- Responsive/mobile navigation is included.
 
-Included:
-- `index.html`
-- `styles.css`
-- `images/hpai-hero.jpg` — cropped from the supplied brand graphic for the hero
-- `images/hpai-brand.jpg` — full supplied brand graphic
-- `README.md`
+Upload/replace `index.html` and `styles.css` in the existing repository and upload the two image files to `images/`.
 
-Upload `index.html`, `styles.css`, and the entire `images` files into the existing public website repository. Keep the existing `CNAME`, `script.js`, other pages, and `style.css`.
-
-The supplied image is used as branded visual content. Later, individual real project photographs can replace the project panels.
+Keep `CNAME`, `style.css`, `script.js`, and existing service pages.
