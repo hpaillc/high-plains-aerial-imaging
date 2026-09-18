@@ -35,3 +35,9 @@ The Agriculture and Enterprise pathway cards now use the cleaner drone/Wyoming s
 
 ## V2.4 Homepage Card Backgrounds
 The Agriculture and Enterprise cards now use separate cropped service images derived from the supplied High Plains brand image. The crops remove the large logo lettering from behind the service copy while preserving the Wyoming landscape and drone imagery.
+
+## V2.5 Homepage Visual Revision
+- Replaced the two pathway-card backgrounds with dedicated, clean Agriculture and Enterprise imagery based on the approved V2.5 visual direction.
+- Removed competing logo/text artwork from behind the service copy.
+- Reduced the displayed company brand image height by approximately 5% (215px → 204px).
+- Added responsive-friendly card image assets: `images/agriculture-card.jpg` and `images/enterprise-card.jpg`.
