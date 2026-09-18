@@ -29,3 +29,6 @@ Commit message:
 
 ## Refinement
 The Agriculture/Enterprise pathway cards were tightened so the supplied brand image emphasizes the drones, Wyoming landscape and industries instead of repeating the large logo lettering behind the card copy.
+
+## V2.3.1 visual refinement
+The Agriculture and Enterprise pathway cards now use the cleaner drone/Wyoming scene from `hpai-hero.jpg` instead of the full logo composition. This keeps the supplied brand graphic for the dedicated brand section while preventing the large HIGH PLAINS lettering from competing with the pathway text.
