@@ -1,15 +1,16 @@
 High Plains Aerial Imaging LLC — Website Version 2.2
+Hylio ARES HYL-150 edition.
 
-Replace the existing:
+Replace:
 - index.html
 - style.css
-- script.js (optional; unchanged)
-- images/hero-clean-wyoming-drone-v22.jpg
+- agriculture-spraying.html
+- images/hero-hylio-ares-hyl150-v22.jpg
 
 Keep:
 - CNAME
-- agriculture-spraying.html
 - crop-health.html
-- other existing repository files
+- script.js
+- other existing files
 
-Version 2.2 specifically removes the baked-in website graphics from the hero background.
+The homepage now uses a clean agricultural drone hero and identifies the spray platform as the Hylio ARES HYL-150.
