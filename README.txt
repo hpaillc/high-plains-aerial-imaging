@@ -1,1 +1,1 @@
-Version 2. Replace the existing website files with these files. Keep the existing CNAME file in the repository. Do not delete it.
+Version 2.1 homepage refresh. Replace index.html, style.css, script.js and add images/hero-wyoming-drone-v21.jpg. Keep CNAME and the existing agriculture/crop pages unless replacing them later.
