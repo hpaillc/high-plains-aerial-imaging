@@ -14,3 +14,5 @@ Keep:
 - other existing files
 
 The homepage now uses a clean agricultural drone hero and identifies the spray platform as the Hylio ARES HYL-150.
+
+V2.2 CORRECTION: style.css now uses the clean Hylio ARES HYL-150 hero image. The previous hero-clean-wyoming-drone-v22.jpg contained an embedded lower-page graphic, which caused duplicate text/sections on the live page. Keep CNAME.
