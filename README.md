@@ -41,3 +41,9 @@ The Agriculture and Enterprise cards now use separate cropped service images der
 - Removed competing logo/text artwork from behind the service copy.
 - Reduced the displayed company brand image height by approximately 5% (215px → 204px).
 - Added responsive-friendly card image assets: `images/agriculture-card.jpg` and `images/enterprise-card.jpg`.
+
+## V2.5 Approved Card Design
+The two service cards now use dedicated, clean photographic backgrounds:
+- `images/agriculture-card.jpg` — agricultural spray drone over crops and Wyoming mountains.
+- `images/enterprise-card.jpg` — enterprise inspection drone over pipeline/oil & gas infrastructure at sunset.
+The full company brand image remains in the brand section above. The displayed brand image height is reduced by approximately 5% from the previous V2.5 setting.
