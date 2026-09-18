@@ -1,18 +1,14 @@
-# High Plains Aerial Imaging — Homepage V2
+# High Plains Aerial Imaging — Homepage V2.1
 
-This is the V2 homepage design for the actual public High Plains Aerial Imaging website.
+V2.1 uses the owner's uploaded High Plains Aerial Imaging brand graphic.
 
-## Upload
-Replace the public site's `index.html` with this V2 file and upload `styles.css` alongside it.
+Included:
+- `index.html`
+- `styles.css`
+- `images/hpai-hero.jpg` — cropped from the supplied brand graphic for the hero
+- `images/hpai-brand.jpg` — full supplied brand graphic
+- `README.md`
 
-## Image files
-V2 is ready for these image paths:
-- `images/hero-wyoming.jpg`
-- `images/project-ranch.jpg`
-- `images/project-oil-gas.jpg`
-- `images/project-construction.jpg`
+Upload `index.html`, `styles.css`, and the entire `images` files into the existing public website repository. Keep the existing `CNAME`, `script.js`, other pages, and `style.css`.
 
-If those images are not present yet, the page still loads with the blue/sky fallback background. Add your actual Wyoming drone images later without changing the HTML.
-
-## GitHub
-Commit the changes to the `main` branch. GitHub Pages will rebuild automatically if Pages is already configured.
+The supplied image is used as branded visual content. Later, individual real project photographs can replace the project panels.
