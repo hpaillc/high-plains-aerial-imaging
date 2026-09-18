@@ -1,15 +1,18 @@
-# High Plains Aerial Imaging — Homepage V1
+# High Plains Aerial Imaging — Homepage V2
 
-Starter homepage for the actual public website.
+This is the V2 homepage design for the actual public High Plains Aerial Imaging website.
 
-## Files
-- `index.html`
-- `styles.css`
+## Upload
+Replace the public site's `index.html` with this V2 file and upload `styles.css` alongside it.
+
+## Image files
+V2 is ready for these image paths:
+- `images/hero-wyoming.jpg`
+- `images/project-ranch.jpg`
+- `images/project-oil-gas.jpg`
+- `images/project-construction.jpg`
+
+If those images are not present yet, the page still loads with the blue/sky fallback background. Add your actual Wyoming drone images later without changing the HTML.
 
 ## GitHub
-Create a separate repository for the actual website, for example:
-`high-plains-aerial-imaging`
-
-Upload both files to the repository root. Then enable GitHub Pages from `main` / `/(root)`.
-
-This is the first homepage build. The project/gallery placeholder is intentional until the owner's actual photos are selected.
+Commit the changes to the `main` branch. GitHub Pages will rebuild automatically if Pages is already configured.
