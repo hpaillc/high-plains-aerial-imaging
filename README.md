@@ -1,12 +1,28 @@
-# High Plains Aerial Imaging — Homepage V2.2
+# High Plains Aerial Imaging LLC — Website V2.3
 
-V2.2 uses the supplied High Plains Aerial Imaging brand graphic while keeping the hero cleaner:
-- The full logo graphic is moved into a dedicated brand section.
-- The hero uses a cleaner crop with Wyoming/drone/agriculture/energy imagery.
-- The right-side Aerial Intelligence panel no longer repeats the full logo.
-- The hero copy includes inspections.
-- Responsive/mobile navigation is included.
+## What is new
+- Refined/tightened V2.2 homepage spacing and typography.
+- Cleaner Aerial Intelligence card.
+- Reduced the large brand image height.
+- Added a clear AGRICULTURE | ENTERPRISE split.
+- Added a dedicated `agriculture-spraying.html` landing page.
+- Added agriculture service cards for drone spraying, crop health, mapping, prescription application support, livestock visibility and thermal monitoring.
+- Added quote CTAs using the company contact information already provided.
+- Kept the supplied High Plains brand imagery.
 
-Upload/replace `index.html` and `styles.css` in the existing repository and upload the two image files to `images/`.
+## GitHub upload
+Replace/add:
+- `index.html`
+- `styles.css`
+- `agriculture-spraying.html`
+- `images/hpai-hero.jpg`
+- `images/hpai-brand.jpg`
 
-Keep `CNAME`, `style.css`, `script.js`, and existing service pages.
+Keep existing files such as:
+- `CNAME`
+- `script.js`
+- `style.css`
+- existing service pages
+
+Commit message:
+`Build V2.3 agriculture and enterprise homepage`
