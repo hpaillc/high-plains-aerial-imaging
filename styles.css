@@ -482,7 +482,10 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
 }
 /* V4.0 PROJECT IMAGE FIX */
 .project-grid .project:nth-child(1)::before{
-  background-image:url("images/project-agriculture.jpg") !important;
+  background-image:url("/images/project-ranching.jpg") !important;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
 .project-grid .project:nth-child(2)::before{
