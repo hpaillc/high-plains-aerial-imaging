@@ -480,3 +480,15 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
     flex-basis:190px;
   }
 }
+/* V4.0 PROJECT IMAGE FIX */
+.project-grid .project:nth-child(1)::before{
+  background-image:url("images/project-agriculture.jpg") !important;
+}
+
+.project-grid .project:nth-child(2)::before{
+  background-image:url("images/project-oil-gas.jpg") !important;
+}
+
+.project-grid .project:nth-child(3)::before{
+  background-image:url("images/project-ranching.jpg") !important;
+}
