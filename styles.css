@@ -162,3 +162,90 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
     padding:18px 16px 16px;
   }
 }
+/* =========================================================
+   HPAI V3.0 — INDUSTRIES SECTION POLISH
+   Refines only the Wyoming Industries section.
+   All approved sections above remain unchanged.
+   ========================================================= */
+
+.band{
+  padding:52px 0 54px;
+}
+
+.band .industry-grid{
+  gap:10px;
+  margin-top:28px;
+}
+
+.industry-grid > div{
+  position:relative;
+  min-height:78px;
+  padding:18px 16px 16px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:9px;
+  background:rgba(255,255,255,.035);
+  transition:transform .18s ease,
+             background .18s ease,
+             border-color .18s ease;
+}
+
+.industry-grid > div::before{
+  content:"";
+  position:absolute;
+  left:16px;
+  top:0;
+  width:42px;
+  height:2px;
+  background:var(--gold);
+}
+
+.industry-grid > div:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.07);
+  border-color:rgba(255,255,255,.28);
+}
+
+.industry-grid > div h3{
+  margin:0 0 8px;
+  color:#fff;
+  font-size:15px;
+  line-height:1.2;
+}
+
+.industry-grid > div p{
+  margin:0;
+  color:#d9e5eb;
+  font-size:11px;
+  line-height:1.45;
+}
+
+@media(max-width:900px){
+  .band{
+    padding:44px 0 46px;
+  }
+
+  .band .industry-grid{
+    margin-top:24px;
+  }
+
+  .industry-grid > div{
+    min-height:74px;
+  }
+}
+
+@media(max-width:600px){
+  .band{
+    padding:38px 0 40px;
+  }
+
+  .band .industry-grid{
+    grid-template-columns:1fr !important;
+    gap:9px;
+    margin-top:20px;
+  }
+
+  .industry-grid > div{
+    min-height:0;
+    padding:17px 15px 15px;
+  }
+}
