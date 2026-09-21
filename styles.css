@@ -14,3 +14,70 @@
 footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer-grid strong{color:#fff}.footer-grid b{color:var(--gold2)}.footer-grid p{font-size:11px}.copyright{text-align:center;border-top:1px solid #ffffff18;margin-top:22px;padding-top:13px;font-size:10px;color:#8fa8b5}
 @media(max-width:900px){.hero-content{grid-template-columns:1fr;gap:28px}.hero-card{justify-self:start;height:270px}.brand-grid,.split-intro,.feature-grid,.quote-grid{grid-template-columns:1fr;gap:25px}.service-grid{grid-template-columns:repeat(2,1fr)}.service-paths,.project-grid{grid-template-columns:1fr 1fr}.industry-grid,.ag-grid{grid-template-columns:repeat(2,1fr)}.project-ranch{grid-column:1/-1}.footer-grid{grid-template-columns:1fr 1fr}.menu-toggle{display:block}nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:10px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}nav a{padding:10px}.menu-open nav{display:flex}}
 @media(max-width:600px){.hero{min-height:650px}.hero-content{padding:52px 0}.hero h1,.ag-hero h1{font-size:43px}.lead{font-size:16px}.quick-points{flex-direction:column;gap:4px}.brand-image img{height:190px}.split-intro h2,.section h2,.cap-intro h2,.feature-grid h2,.quote h2{font-size:27px}.service-grid,.industry-grid,.ag-grid,.cap-list,.service-paths,.project-grid,.footer-grid,.check-box{grid-template-columns:1fr}.project-ranch{grid-column:auto}.project{height:220px}.site-header,.nav-wrap{height:64px}nav{top:64px}}
+/* =========================================================
+   HPAI V2.8 — HOMEPAGE SPACING & POLISH
+   Add this block to the END of styles.css.
+   Keeps all approved imagery, hero, header, and cards unchanged.
+   ========================================================= */
+
+/* Brand section: tighter, cleaner vertical rhythm */
+.brand-strip{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.brand-grid{
+  align-items:center;
+}
+
+/* Intro section: reduce excess space without changing typography */
+.split-intro{
+  padding-top:44px;
+  padding-bottom:28px;
+}
+
+/* Keep service cards visually connected to the intro */
+.service-paths{
+  padding-top:8px;
+  padding-bottom:48px;
+}
+
+/* Slightly cleaner spacing inside the approved cards */
+.path-content{
+  bottom:24px;
+}
+
+/* Mobile spacing */
+@media(max-width:900px){
+  .brand-strip{
+    padding-top:24px;
+    padding-bottom:24px;
+  }
+
+  .split-intro{
+    padding-top:36px;
+    padding-bottom:22px;
+  }
+
+  .service-paths{
+    padding-top:6px;
+    padding-bottom:40px;
+  }
+}
+
+@media(max-width:600px){
+  .brand-strip{
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+  .split-intro{
+    padding-top:30px;
+    padding-bottom:18px;
+  }
+
+  .service-paths{
+    padding-top:4px;
+    padding-bottom:32px;
+  }
+}
