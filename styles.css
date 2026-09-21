@@ -303,7 +303,7 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
   background-image:url("images/project-oil-gas.jpg");
 }
 
-.project-construction::before{
+.project-agriculture::before{
   background-image:url("images/project-agriculture.jpg");
 }
 
