@@ -633,14 +633,14 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
 }
 /* V5.1 - PROJECT GALLERY IMAGE REFINEMENT */
 
-.projects .project-agriculture{
+.projects .project-agriculture::before{
   background-image:url("images/project-agriculture-v5-1.jpg") !important;
 }
 
-.projects .project-energy{
+.projects .project-energy::before{
   background-image:url("images/project-oil-gas-v5-1.jpg") !important;
 }
 
-.projects .project-ranching{
+.projects .project-ranching::before{
   background-image:url("images/project-ranching-v5-1.jpg") !important;
 }
