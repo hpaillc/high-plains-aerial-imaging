@@ -402,6 +402,19 @@
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
 
 const quoteForm=document.getElementById('quote-form');
+  
+const serviceParam=new URLSearchParams(window.location.search).get('service');
+const serviceMap={
+  agriculture:'Agriculture & Drone Spraying',
+  energy:'Oil & Gas / Pipeline',
+  construction:'Construction',
+  enterprise:'Commercial Inspections'
+};
+const serviceSelect=quoteForm.querySelector('[name="service"]');
+
+if(serviceSelect && serviceMap[serviceParam]){
+  serviceSelect.value=serviceMap[serviceParam];
+}
 
 if(quoteForm){
   quoteForm.addEventListener('submit',function(e){
