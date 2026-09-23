@@ -991,7 +991,164 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
   gap:5px;
   margin-top:20px;
 }
+/* V5.4 SERVICES & PRICING */
 
+.v54-pricing{
+  padding:82px 0;
+  background:var(--paper);
+}
+
+.v54-pricing-head{
+  max-width:760px;
+  margin:0 auto 42px;
+  text-align:center;
+}
+
+.v54-pricing-head h2{
+  margin:8px 0 16px;
+}
+
+.v54-pricing-head h2 span{
+  color:var(--accent);
+}
+
+.v54-pricing-head > p:last-child{
+  max-width:680px;
+  margin:0 auto;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.v54-pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.v54-price-card{
+  display:flex;
+  flex-direction:column;
+  padding:27px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(20,43,61,.06);
+}
+
+.v54-price-card.v54-featured{
+  border-top:4px solid var(--accent);
+}
+
+.v54-number{
+  margin:0 0 10px;
+  color:var(--accent);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+
+.v54-price-card h3{
+  margin:0 0 10px;
+  font-size:21px;
+  line-height:1.2;
+}
+
+.v54-price{
+  margin:0 0 14px;
+  color:var(--accent);
+  font-size:19px;
+  font-weight:800;
+}
+
+.v54-price-card > p:not(.v54-number):not(.v54-price):not(.v54-note){
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.6;
+}
+
+.v54-price-card ul{
+  margin:10px 0 0;
+  padding-left:18px;
+  color:var(--ink);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.v54-price-card li{
+  margin-bottom:3px;
+}
+
+.v54-note{
+  margin:14px 0 0;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.55;
+}
+
+.v54-travel{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:35px;
+  margin-top:22px;
+  padding:30px;
+  background:var(--navy);
+  border-radius:14px;
+}
+
+.v54-travel .eyebrow{
+  color:var(--accent);
+}
+
+.v54-travel h3{
+  margin:8px 0 0;
+  color:#fff;
+}
+
+.v54-travel-copy{
+  color:rgba(255,255,255,.78);
+  font-size:13px;
+  line-height:1.65;
+}
+
+.v54-travel-copy p{
+  margin:0 0 10px;
+}
+
+@media(max-width:900px){
+  .v54-pricing-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .v54-travel{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+}
+
+@media(max-width:600px){
+  .v54-pricing{
+    padding:58px 0;
+  }
+
+  .v54-pricing-head{
+    margin-bottom:30px;
+  }
+
+  .v54-pricing-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .v54-price-card{
+    padding:22px;
+  }
+
+  .v54-travel{
+    padding:23px;
+  }
+}
 @media(max-width:600px){
   .v53-quote-form input,
   .v53-quote-form select,
