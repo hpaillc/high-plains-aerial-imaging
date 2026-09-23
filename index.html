@@ -418,7 +418,14 @@ if(quoteForm){
       f.get('details')
     );
 
-    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=highplainsimaging590@gmail.com&su='+subject+'&body='+body,'_blank');
+    const gmailUrl='https://mail.google.com/mail/?view=cm&fs=1&to=highplainsimaging590@gmail.com&su='+subject+'&body='+body;
+const gmailLink=document.createElement('a');
+gmailLink.href=gmailUrl;
+gmailLink.target='_blank';
+gmailLink.rel='noopener';
+document.body.appendChild(gmailLink);
+gmailLink.click();
+gmailLink.remove();
   });
 }
 </script>
