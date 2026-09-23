@@ -297,6 +297,7 @@
           Minimum service fee: $250–$400. Agricultural spraying is available
           within Wyoming.
         </p>
+      <a class="v54-quote-link" href="?service=agriculture#quote">Request an Agriculture Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -314,6 +315,7 @@
           <li>Visual imagery when appropriate</li>
           <li>Digital imagery delivery</li>
         </ul>
+      <a class="v54-quote-link" href="?service=ag-thermal#quote">Request a Crop Health Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -331,6 +333,7 @@
           <li>Extended pipeline corridors — custom quote</li>
           <li>Recurring inspection programs — custom pricing</li>
         </ul>
+        <a class="v54-quote-link" href="?service=energy#quote">Request an Oil & Gas Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -348,6 +351,7 @@
           <li>Specialized inspections — custom quote</li>
           <li>Recurring programs — custom pricing</li>
         </ul>
+        <a class="v54-quote-link" href="?service=thermal#quote">Request a Thermal Inspection Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -365,6 +369,7 @@
           <li>Mapping &amp; measurement — starting at $1,250</li>
           <li>Large projects — custom quote</li>
         </ul>
+        <a class="v54-quote-link" href="?service=construction#quote">Request a Construction Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -382,6 +387,7 @@
           <li>Specialized mapping — custom quote</li>
           <li>Large-area / multi-day projects — custom quote</li>
         </ul>
+        <a class="v54-quote-link" href="?service=mapping#quote">Request a Mapping Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -399,6 +405,7 @@
           <li>Ranch mapping — starting at $1,250</li>
           <li>Seasonal programs — custom pricing</li>
         </ul>
+        <a class="v54-quote-link" href="?service=ranching#quote">Request a Ranching Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -420,6 +427,7 @@
           Real estate services are provided for inspection and documentation
           purposes, not listing or marketing photography.
         </p>
+        <a class="v54-quote-link" href="?service=real-estate#quote">Request a Real Estate Inspection Quote →</a>
       </div>
 
       <div class="v54-price-card">
@@ -437,6 +445,7 @@
           <li>Multi-site projects — custom quote</li>
           <li>Recurring programs — custom pricing</li>
         </ul>
+        <a class="v54-quote-link" href="?service=enterprise#quote">Request a Commercial Inspection Quote →</a>
       </div>
 
     </div>
@@ -577,6 +586,7 @@
           <select name="service" required>
             <option value="">Select a service</option>
             <option>Agriculture &amp; Drone Spraying</option>
+            <option>Agricultural Thermal Crop Health Imaging</option>
             <option>Oil &amp; Gas / Pipeline</option>
             <option>Construction</option>
             <option>Thermal Inspections</option>
@@ -616,8 +626,13 @@ const quoteForm=document.getElementById('quote-form');
 const serviceParam=new URLSearchParams(window.location.search).get('service');
 const serviceMap={
   agriculture:'Agriculture & Drone Spraying',
+  'ag-thermal':'Agricultural Thermal Crop Health Imaging',
   energy:'Oil & Gas / Pipeline',
+  thermal:'Thermal Inspections',
   construction:'Construction',
+  mapping:'Mapping & Photogrammetry',
+  ranching:'Ranching & Livestock',
+  'real-estate':'Real Estate',
   enterprise:'Commercial Inspections'
 };
 const serviceSelect=quoteForm.querySelector('[name="service"]');
