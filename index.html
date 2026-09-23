@@ -394,6 +394,33 @@
 </section>
 </main>
 <footer><div class="wrap footer-grid"><div><strong>High Plains Aerial Imaging LLC</strong><p>Professional drone imaging and aerial services across Wyoming.</p></div><div><b>Services</b><p>Agriculture • Oil &amp; Gas • Construction<br>Thermal • Mapping • Ranching • Real Estate</p></div><div><b>Contact</b><p>906-221-6175<br>highplainsimaging590@gmail.com</p></div></div><div class="copyright">© 2026 High Plains Aerial Imaging LLC. All rights reserved.</div></footer>
-<script>document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));</script>
+<script>
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
+
+const quoteForm=document.getElementById('quote-form');
+
+if(quoteForm){
+  quoteForm.addEventListener('submit',function(e){
+    e.preventDefault();
+
+    const f=new FormData(quoteForm);
+
+    const subject=encodeURIComponent('High Plains Aerial Imaging Quote Request');
+
+    const body=encodeURIComponent(
+      'Name: '+f.get('name')+'\n'+
+      'Company: '+f.get('company')+'\n'+
+      'Phone: '+f.get('phone')+'\n'+
+      'Email: '+f.get('email')+'\n'+
+      'Service: '+f.get('service')+'\n'+
+      'Project Location: '+f.get('location')+'\n\n'+
+      'Project Details:\n'+
+      f.get('details')
+    );
+
+    window.location.href='mailto:highplainsimaging590@gmail.com?subject='+subject+'&body='+body;
+  });
+}
+</script>
 </body>
 </html>
