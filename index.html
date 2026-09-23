@@ -413,7 +413,13 @@ const serviceMap={
 const serviceSelect=quoteForm.querySelector('[name="service"]');
 
 if(serviceSelect && serviceMap[serviceParam]){
-  serviceSelect.value=serviceMap[serviceParam];
+  const targetService=serviceMap[serviceParam];
+
+  [...serviceSelect.options].forEach(option=>{
+    if(option.textContent.trim()===targetService){
+      option.selected=true;
+    }
+  });
 }
 
 if(quoteForm){
