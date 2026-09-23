@@ -925,3 +925,81 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
     padding-left:12px;
   }
 }
+/* V5.3 QUOTE FORM */
+
+.v53-quote-form{
+  display:grid;
+  gap:11px;
+}
+
+.v53-quote-form label{
+  display:grid;
+  gap:5px;
+  color:var(--navy);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.4px;
+}
+
+.v53-quote-form input,
+.v53-quote-form select,
+.v53-quote-form textarea{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:7px;
+  padding:10px 11px;
+  background:#fff;
+  color:var(--ink);
+  font:13px/1.4 Inter,Segoe UI,Arial,sans-serif;
+  box-sizing:border-box;
+}
+
+.v53-quote-form input::placeholder,
+.v53-quote-form textarea::placeholder{
+  color:#8a929b;
+}
+
+.v53-quote-form textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.v53-quote-form input:focus,
+.v53-quote-form select:focus,
+.v53-quote-form textarea:focus{
+  outline:2px solid rgba(209,154,58,.28);
+  outline-offset:1px;
+  border-color:var(--gold);
+}
+
+.v53-quote-form .button{
+  width:100%;
+  border:0;
+  cursor:pointer;
+}
+
+.v53-quote-form small{
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.45;
+}
+
+.quote-contact{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  margin-top:20px;
+}
+
+@media(max-width:600px){
+  .v53-quote-form input,
+  .v53-quote-form select,
+  .v53-quote-form textarea{
+    font-size:16px;
+  }
+
+  .quote-box{
+    padding:17px;
+  }
+}
