@@ -1,1 +1,534 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Crop Health & Imaging | High Plains Aerial Imaging LLC</title><meta name="description" content="Crop health imaging, aerial field scouting and agricultural drone data services serving Wyoming."><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="topbar"><a class="brand" href="index.html"><span class="mountain-mark">⌃⌃</span><span><strong>HIGH PLAINS</strong><small>AERIAL IMAGING LLC</small></span><i>Elevated Solutions<br>for a Stronger Tomorrow</i></a><div class="contact"><a href="tel:19062216175">☎ 906-221-6175</a><a href="mailto:highplainsimaging590@gmail.com">✉ highplainsimaging590@gmail.com</a><span>⌖ Serving Wyoming</span></div></div><nav class="nav"><a href="index.html">Home</a><a href="agriculture-spraying.html">Agricultural Spraying</a><a class="active" href="crop-health.html">Crop Health</a><a href="index.html#industries">Enterprise Services</a><a href="index.html#about">About</a><a href="index.html#quote">Contact</a><a class="nav-cta" href="index.html#quote">Request a Quote →</a></nav></header><section class="pagehero croppage"><div><p class="kicker">CROP HEALTH &amp; AERIAL IMAGING</p><h1>Know Your Field<br><em>From Above</em></h1><p>Use aerial imagery as another tool for scouting, comparison and field documentation.</p><a class="btn green" href="index.html#quote">Request a Quote →</a></div></section><section class="content"><div class="twocol"><div><p class="kicker">FIELD INTELLIGENCE</p><h2>Find patterns that deserve a closer look.</h2><p>Aerial imagery can help visualize differences across a field and guide where boots-on-the-ground scouting should happen. Sensor choice and project goals determine what information can be collected.</p></div><img src="images/crop-health.jpg" alt="Example crop health imagery"></div><div class="features"><div><h3>Scouting</h3><p>Inspect large and difficult-to-access areas efficiently.</p></div><div><h3>Weed Detection</h3><p>Identify areas that may need closer scouting or treatment planning.</p></div><div><h3>Repeat Monitoring</h3><p>Capture imagery at different times to compare conditions.</p></div><div><h3>Before &amp; After</h3><p>Document field conditions around management changes.</p></div></div><div class="notice"><h3>Imagery is a scouting tool.</h3><p>Aerial imagery can identify areas worth investigating; it does not by itself establish the cause of crop stress or replace agronomic diagnosis.</p></div></section><footer><div class="footer-main container"><div class="footer-brand"><span class="mountain-mark">⌃⌃</span><b>HIGH PLAINS<small>AERIAL IMAGING LLC</small></b></div><div class="footer-nav"><a href="index.html">Home</a><a href="agriculture-spraying.html">Agricultural Spraying</a><a href="index.html#quote">Contact</a></div><div class="footer-contact"><a href="tel:19062216175">906-221-6175</a><a href="mailto:highplainsimaging590@gmail.com">highplainsimaging590@gmail.com</a></div></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Crop Health &amp; Aerial Imaging | High Plains Aerial Imaging LLC</title>
+
+<meta name="description" content="Crop health imaging, aerial field scouting and agricultural drone data services serving Wyoming.">
+
+<link rel="stylesheet" href="styles.css?v=54">
+
+<style>
+/* =========================================================
+   CROP HEALTH PAGE
+   V5.4 STANDALONE PAGE
+   ========================================================= */
+
+.crop-page{
+  background:#f5f7f8;
+}
+
+.crop-hero{
+  position:relative;
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(8,44,67,.92) 0%,rgba(8,44,67,.72) 42%,rgba(8,44,67,.18) 78%,rgba(8,44,67,.08) 100%),
+    url("images/crop-health.jpg") center center/cover no-repeat;
+}
+
+.crop-hero-content{
+  position:relative;
+  z-index:2;
+  width:min(1160px,92%);
+  margin:0 auto;
+  padding:80px 0;
+}
+
+.crop-hero-copy{
+  max-width:650px;
+  color:#fff;
+}
+
+.crop-hero-copy .eyebrow{
+  color:#efbd67;
+}
+
+.crop-hero-copy h1{
+  margin:14px 0 20px;
+  font-size:clamp(42px,6vw,72px);
+  line-height:1.02;
+  letter-spacing:-1.5px;
+  color:#fff;
+}
+
+.crop-hero-copy h1 span{
+  color:#efbd67;
+}
+
+.crop-hero-copy .lead{
+  max-width:620px;
+  margin:0 0 28px;
+  color:#fff;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.crop-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.crop-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:13px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  transition:transform .2s ease,opacity .2s ease;
+}
+
+.crop-button:hover{
+  transform:translateY(-1px);
+  opacity:.92;
+}
+
+.crop-button.primary{
+  background:#d19a3a;
+  color:#fff;
+}
+
+.crop-button.secondary{
+  border:1px solid rgba(255,255,255,.55);
+  color:#fff;
+  background:rgba(255,255,255,.08);
+}
+
+.crop-section{
+  padding:78px 0;
+}
+
+.crop-section.alt{
+  background:#fff;
+}
+
+.crop-grid{
+  width:min(1160px,92%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.crop-copy .eyebrow{
+  margin-bottom:10px;
+}
+
+.crop-copy h2{
+  margin:0 0 18px;
+  color:#17212b;
+  font-size:36px;
+  line-height:1.15;
+}
+
+.crop-copy p{
+  color:#4b5b68;
+  line-height:1.75;
+  margin:0 0 16px;
+}
+
+.crop-image{
+  overflow:hidden;
+  border-radius:14px;
+  border:1px solid #d9e1e6;
+  box-shadow:0 14px 35px rgba(15,23,42,.12);
+}
+
+.crop-image img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.crop-feature-grid{
+  width:min(1160px,92%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.crop-feature{
+  padding:25px;
+  background:#fff;
+  border:1px solid #d9e1e6;
+  border-radius:12px;
+}
+
+.crop-feature h3{
+  margin:0 0 10px;
+  color:#123c59;
+  font-size:20px;
+}
+
+.crop-feature p{
+  margin:0;
+  color:#65717d;
+  line-height:1.65;
+}
+
+.crop-notice{
+  width:min(900px,92%);
+  margin:0 auto;
+  padding:28px 30px;
+  border-left:4px solid #d19a3a;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 10px 28px rgba(15,23,42,.07);
+}
+
+.crop-notice h3{
+  margin:0 0 8px;
+  color:#123c59;
+}
+
+.crop-notice p{
+  margin:0;
+  color:#65717d;
+  line-height:1.7;
+}
+
+.crop-cta{
+  background:#082c43;
+  color:#fff;
+  padding:70px 0;
+}
+
+.crop-cta-inner{
+  width:min(1000px,92%);
+  margin:0 auto;
+  text-align:center;
+}
+
+.crop-cta h2{
+  margin:0 0 15px;
+  color:#fff;
+  font-size:38px;
+}
+
+.crop-cta p{
+  max-width:720px;
+  margin:0 auto 25px;
+  color:#d8e3ea;
+  line-height:1.7;
+}
+
+.crop-cta .crop-actions{
+  justify-content:center;
+}
+
+@media(max-width:900px){
+  .crop-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .crop-feature-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .crop-hero{
+    min-height:520px;
+  }
+}
+
+@media(max-width:600px){
+  .crop-hero{
+    min-height:620px;
+    background:
+      linear-gradient(180deg,rgba(8,44,67,.78) 0%,rgba(8,44,67,.72) 55%,rgba(8,44,67,.82) 100%),
+      url("images/crop-health.jpg") center center/cover no-repeat;
+  }
+
+  .crop-hero-content{
+    padding:55px 0;
+  }
+
+  .crop-hero-copy h1{
+    font-size:44px;
+  }
+
+  .crop-hero-copy .lead{
+    font-size:16px;
+  }
+
+  .crop-section{
+    padding:55px 0;
+  }
+
+  .crop-grid{
+    width:90%;
+  }
+
+  .crop-copy h2{
+    font-size:30px;
+  }
+
+  .crop-feature-grid{
+    width:90%;
+    grid-template-columns:1fr;
+  }
+
+  .crop-feature{
+    padding:22px;
+  }
+
+  .crop-notice{
+    width:90%;
+    padding:23px;
+  }
+
+  .crop-cta{
+    padding:55px 0;
+  }
+
+  .crop-cta h2{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body class="crop-page">
+
+<header class="site-header">
+  <div class="wrap nav-wrap">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HP</span>
+      <span class="brand-copy">
+        <strong>High Plains Aerial Imaging LLC</strong>
+        <small>Professional Drone Imaging &amp; Aerial Services</small>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      onclick="document.body.classList.toggle('menu-open')"
+    >☰</button>
+
+    <nav>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#industries">Industries</a>
+      <a href="index.html#capabilities">Capabilities</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About</a>
+      <a class="nav-cta" href="index.html#quote">Request a Quote</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- CROP HEALTH HERO -->
+  <section class="crop-hero">
+
+    <div class="crop-hero-content">
+
+      <div class="crop-hero-copy">
+
+        <p class="eyebrow">CROP HEALTH &amp; AERIAL IMAGING</p>
+
+        <h1>
+          Know Your Field<br>
+          <span>From Above.</span>
+        </h1>
+
+        <p class="lead">
+          Use aerial imagery as another tool for scouting,
+          comparison and field documentation.
+        </p>
+
+        <div class="crop-actions">
+          <a
+            class="crop-button primary"
+            href="index.html?service=ag-thermal#quote"
+          >Request a Crop Health Quote →</a>
+
+          <a
+            class="crop-button secondary"
+            href="index.html#services"
+          >View Services</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FIELD INTELLIGENCE -->
+  <section class="crop-section">
+
+    <div class="crop-grid">
+
+      <div class="crop-copy">
+
+        <p class="eyebrow">FIELD INTELLIGENCE</p>
+
+        <h2>
+          Find patterns that deserve a closer look.
+        </h2>
+
+        <p>
+          Aerial imagery can help visualize differences across
+          a field and guide where boots-on-the-ground scouting
+          should happen.
+        </p>
+
+        <p>
+          Sensor choice and project goals determine what
+          information can be collected.
+        </p>
+
+      </div>
+
+      <div class="crop-image">
+        <img
+          src="images/crop-health.jpg"
+          alt="Example crop health aerial imagery"
+        >
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CAPABILITIES -->
+  <section class="crop-section alt">
+
+    <div class="crop-feature-grid">
+
+      <div class="crop-feature">
+        <h3>Scouting</h3>
+        <p>
+          Inspect large and difficult-to-access areas efficiently.
+        </p>
+      </div>
+
+      <div class="crop-feature">
+        <h3>Weed Detection</h3>
+        <p>
+          Identify areas that may need closer scouting or
+          treatment planning.
+        </p>
+      </div>
+
+      <div class="crop-feature">
+        <h3>Repeat Monitoring</h3>
+        <p>
+          Capture imagery at different times to compare conditions.
+        </p>
+      </div>
+
+      <div class="crop-feature">
+        <h3>Before &amp; After</h3>
+        <p>
+          Document field conditions around management changes.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- IMPORTANT LIMITATION -->
+  <section class="crop-section">
+
+    <div class="crop-notice">
+
+      <h3>Imagery is a scouting tool.</h3>
+
+      <p>
+        Aerial imagery can identify areas worth investigating;
+        it does not by itself establish the cause of crop stress
+        or replace agronomic diagnosis.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CALL TO ACTION -->
+  <section class="crop-cta">
+
+    <div class="crop-cta-inner">
+
+      <h2>See More. Scout Smarter.</h2>
+
+      <p>
+        Use aerial imagery to add another perspective to your
+        agricultural operation and help identify areas that
+        deserve a closer look.
+      </p>
+
+      <div class="crop-actions">
+
+        <a
+          class="crop-button primary"
+          href="index.html?service=ag-thermal#quote"
+        >Request a Crop Health Quote →</a>
+
+        <a
+          class="crop-button secondary"
+          href="tel:19062216175"
+        >Call 906-221-6175</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+      <strong>High Plains Aerial Imaging LLC</strong>
+      <p>
+        Professional Drone Imaging &amp; Aerial Services
+      </p>
+    </div>
+
+    <div>
+      <strong>Crop Health</strong>
+      <p>
+        Aerial crop scouting and field documentation
+        throughout Wyoming.
+      </p>
+    </div>
+
+    <div>
+      <strong>Contact</strong>
+      <p>
+        <a href="tel:19062216175">906-221-6175</a><br>
+        <a href="mailto:highplainsimaging590@gmail.com">
+          highplainsimaging590@gmail.com
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
