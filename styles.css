@@ -1023,6 +1023,7 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
   text-align:center;
 }
 .v54-about{
+  position:relative;
   padding:78px 0;
   background-color:var(--paper);
   background-image:url("/images/High-Plains-About-Veteran-Background.jpg");
@@ -1031,6 +1032,25 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
   background-repeat:no-repeat;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+
+.v54-about::before{
+  content:"";
+  position:absolute;
+  top:28px;
+  bottom:28px;
+  left:12%;
+  right:12%;
+  background:rgba(255,255,255,.84);
+  border-radius:18px;
+  box-shadow:0 12px 35px rgba(15,23,42,.08);
+  pointer-events:none;
+}
+
+.v54-about > .wrap{
+  position:relative;
+  z-index:1;
 }
 
 .v54-about-grid{
