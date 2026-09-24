@@ -1022,6 +1022,46 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
   line-height:1.6;
   text-align:center;
 }
+.v54-about{
+  padding:78px 0;
+  background:var(--paper);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.v54-about-grid{
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  gap:60px;
+  align-items:start;
+}
+
+.v54-about-head h2{
+  margin:8px 0 0;
+  font-size:32px;
+  line-height:1.15;
+}
+
+.v54-about-copy{
+  max-width:680px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.75;
+}
+
+.v54-about-copy p{
+  margin:0 0 16px;
+}
+
+.v54-about-trust{
+  margin-top:24px !important;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+  color:var(--navy) !important;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.02em;
+}
 .v54-pricing{
   padding:82px 0;
   background:var(--paper);
