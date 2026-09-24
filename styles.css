@@ -993,6 +993,25 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
 }
 /* V5.4 SERVICES & PRICING */
 
+.v54-quote-link{
+  display:inline-block;
+  margin-top:18px;
+  padding:9px 14px;
+  background:var(--navy);
+  color:#fff;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:700;
+  text-decoration:none;
+  transition:all .2s ease;
+}
+
+.v54-quote-link:hover{
+  background:var(--accent);
+  color:#fff;
+  transform:translateY(-1px);
+}
+
 .v54-pricing{
   padding:82px 0;
   background:var(--paper);
