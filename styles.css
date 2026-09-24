@@ -1296,3 +1296,44 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
     padding:17px;
   }
 }
+/* V5.4 MOBILE ABOUT FINAL OVERRIDE */
+
+@media(max-width:600px){
+  .v54-about{
+    padding:48px 0;
+  }
+
+  .v54-about::before{
+    top:18px;
+    bottom:18px;
+    left:4%;
+    right:4%;
+  }
+
+  .v54-about-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .v54-about-head{
+    grid-column:1;
+    grid-row:auto;
+  }
+
+  .v54-about-photo{
+    grid-column:1;
+    grid-row:auto;
+  }
+
+  .v54-about-photo img{
+    width:100%;
+    max-width:420px;
+    margin:0 auto;
+  }
+
+  .v54-about-copy{
+    grid-column:1;
+    grid-row:auto;
+    max-width:100%;
+  }
+}
