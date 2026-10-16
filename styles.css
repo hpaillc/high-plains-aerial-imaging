@@ -1354,3 +1354,56 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
 .ag-feature{border-top:1px solid #d6e0e6;border-bottom:1px solid #d6e0e6}
 .feature-grid p:not(.eyebrow){color:#38576b;font-size:14px;font-weight:500;line-height:1.65}
 .check-box div{border-color:#c7d4dc;box-shadow:0 4px 12px rgba(8,44,67,.05)}
+
+
+/* Service showcase: use honest, graphic service cards until real project photos are available. */
+.service-showcase .project::before{
+  display:none !important;
+}
+.service-showcase .project{
+  min-height:235px;
+  border:0;
+  box-shadow:none;
+}
+.service-showcase .project > div{
+  display:flex;
+  height:100%;
+  padding:28px 25px;
+  flex-direction:column;
+  justify-content:flex-end;
+  background:transparent;
+}
+.service-showcase .project h3{
+  max-width:260px;
+  color:#fff;
+  font-size:21px;
+}
+.service-showcase .project p{
+  max-width:260px;
+  margin:10px 0 0;
+  color:rgba(255,255,255,.82);
+  font-size:13px;
+  line-height:1.55;
+}
+.service-showcase .project span{
+  color:#ffd68c;
+}
+.service-showcase .service-agriculture{
+  background:linear-gradient(135deg,#184c48,#2e7c67);
+}
+.service-showcase .service-energy{
+  background:linear-gradient(135deg,#17354b,#276a8a);
+}
+.service-showcase .service-ranching{
+  background:linear-gradient(135deg,#60422b,#a16d35);
+}
+.service-showcase-intro{
+  max-width:720px;
+  margin:-10px 0 22px;
+  color:#38576b;
+  line-height:1.6;
+}
+@media(max-width:600px){
+  .service-showcase .project{min-height:210px;}
+  .service-showcase .project > div{padding:24px 21px;}
+}
