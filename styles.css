@@ -1337,3 +1337,13 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
     max-width:100%;
   }
 }
+
+/* Dedicated-page readability */
+.section .lead{color:#46606f;font-weight:500}
+.projects .lead{color:#46606f;font-weight:500}
+.section .industry-grid div{background:#fff;border:1px solid #c7d4dc;box-shadow:0 5px 16px rgba(8,44,67,.06)}
+.section .industry-grid b{color:#102e42;font-size:16px}
+.section .industry-grid span{color:#46606f;font-size:12px;line-height:1.6}
+.section .cap-list p{color:#46606f}
+.section .cap-intro .lead{color:#46606f}
+@media (max-width:700px){.section .industry-grid{grid-template-columns:1fr}.section .industry-grid div{padding:17px}}
