@@ -1347,3 +1347,10 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
 .section .cap-list p{color:#46606f}
 .section .cap-intro .lead{color:#46606f}
 @media (max-width:700px){.section .industry-grid{grid-template-columns:1fr}.section .industry-grid div{padding:17px}}
+
+/* Stronger copy contrast and section separation */
+.section .cap-intro .lead{color:#304f63!important;font-size:16px;font-weight:600;line-height:1.62}
+.section .cap-list p{color:#38576b;font-size:12.5px;line-height:1.55}
+.ag-feature{border-top:1px solid #d6e0e6;border-bottom:1px solid #d6e0e6}
+.feature-grid p:not(.eyebrow){color:#38576b;font-size:14px;font-weight:500;line-height:1.65}
+.check-box div{border-color:#c7d4dc;box-shadow:0 4px 12px rgba(8,44,67,.05)}
