@@ -83,49 +83,49 @@
       <span class="service-num">02</span>
       <h3>Oil &amp; Gas</h3>
       <p>Pipeline, facility and infrastructure inspection with high-resolution visual and thermal imaging to help identify issues earlier.</p>
-      <a href="#quote">Request an oil &amp; gas quote →</a>
+      <a href="?service=energy#quote">Request an oil &amp; gas quote →</a>
     </article>
 
     <article class="service-card">
       <span class="service-num">03</span>
       <h3>Construction</h3>
       <p>Document progress, inspect hard-to-reach areas, measure site materials and maintain a clear visual record from above.</p>
-      <a href="#quote">Request a construction quote →</a>
+      <a href="?service=construction#quote">Request a construction quote →</a>
     </article>
 
     <article class="service-card">
       <span class="service-num">04</span>
       <h3>Thermal Inspections</h3>
       <p>Non-contact thermal imaging helps locate heat anomalies, equipment concerns, potential leaks and areas requiring closer inspection.</p>
-      <a href="#quote">Request a thermal inspection quote →</a>
+      <a href="?service=thermal#quote">Request a thermal inspection quote →</a>
     </article>
 
     <article class="service-card">
       <span class="service-num">05</span>
       <h3>Mapping &amp; Photogrammetry</h3>
       <p>Maps, 3D models and clear site images that help you plan, measure and keep a record of the work.</p>
-      <a href="#quote">Request a mapping quote →</a>
+      <a href="?service=mapping#quote">Request a mapping quote →</a>
     </article>
 
     <article class="service-card">
       <span class="service-num">06</span>
       <h3>Ranching &amp; Livestock</h3>
       <p>Large-acreage observation, livestock monitoring and ranch visibility without putting people or vehicles into every remote area.</p>
-      <a href="#quote">Request a ranching quote →</a>
+      <a href="?service=ranching#quote">Request a ranching quote →</a>
     </article>
 
     <article class="service-card">
       <span class="service-num">07</span>
       <h3>Real Estate</h3>
       <p>Aerial inspection and documentation for roofs, exteriors, acreage and hard-to-reach property conditions.</p>
-      <a href="#quote">Request a real estate inspection quote →</a>
+      <a href="?service=real-estate#quote">Request a real estate inspection quote →</a>
     </article>
 
     <article class="service-card">
       <span class="service-num">08</span>
       <h3>Commercial Inspections</h3>
       <p>High-resolution visual inspection of roofs, structures, equipment and hard-to-reach areas while reducing unnecessary access risks.</p>
-      <a href="#quote">Request an inspection quote →</a>
+      <a href="?service=enterprise#quote">Request an inspection quote →</a>
     </article>
 
   </div>
@@ -601,7 +601,8 @@
     </div>
 
     <div class="quote-box">
-      <form id="quote-form" class="v53-quote-form">
+      <form id="quote-form" class="v53-quote-form" action="https://formspree.io/f/meaaalqa" method="POST">
+        <input type="hidden" name="_subject" value="High Plains Aerial Imaging Quote Request">
 
         <label>
           FULL NAME
@@ -652,7 +653,9 @@
 
         <button class="button primary big" type="submit">Send Request</button>
 
-        <small>Submitting this form will open your email app with your request ready to send.</small>
+        <small>Send your request directly to High Plains Aerial Imaging. No email app is needed. Your details are processed through Formspree to deliver your inquiry.</small>
+        <p id="quote-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+        <noscript><small>After submitting, follow the confirmation or verification instructions on Formspree.</small></noscript>
 
       </form>
     </div>
@@ -690,32 +693,40 @@ if(serviceSelect && serviceMap[serviceParam]){
 }
 
 if(quoteForm){
-  quoteForm.addEventListener('submit',function(e){
+  const submitButton=quoteForm.querySelector('[type="submit"]');
+  const status=document.getElementById('quote-status');
+  let sending=false;
+  quoteForm.addEventListener('submit',async function(e){
     e.preventDefault();
-
-    const f=new FormData(quoteForm);
-
-    const subject=encodeURIComponent('High Plains Aerial Imaging Quote Request');
-
-    const body=encodeURIComponent(
-      'Name: '+f.get('name')+'\n'+
-      'Company: '+f.get('company')+'\n'+
-      'Phone: '+f.get('phone')+'\n'+
-      'Email: '+f.get('email')+'\n'+
-      'Service: '+f.get('service')+'\n'+
-      'Project Location: '+f.get('location')+'\n\n'+
-      'Project Details:\n'+
-      f.get('details')
-    );
-
-    const gmailUrl='https://mail.google.com/mail/?view=cm&fs=1&to=highplainsimaging590@gmail.com&su='+subject+'&body='+body;
-const gmailLink=document.createElement('a');
-gmailLink.href=gmailUrl;
-gmailLink.target='_blank';
-gmailLink.rel='noopener';
-document.body.appendChild(gmailLink);
-gmailLink.click();
-gmailLink.remove();
+    if(sending || !quoteForm.reportValidity()) return;
+    sending=true;
+    submitButton.disabled=true;
+    submitButton.textContent='Sending…';
+    quoteForm.setAttribute('aria-busy','true');
+    status.hidden=false;
+    status.textContent='Sending your request…';
+    const controller=new AbortController();
+    const timeout=setTimeout(()=>controller.abort(),30000);
+    try{
+      const response=await fetch(quoteForm.action,{
+        method:'POST',
+        body:new FormData(quoteForm),
+        headers:{Accept:'application/json'},
+        signal:controller.signal
+      });
+      if(!response.ok) throw new Error('Submission rejected');
+      status.textContent='Thank you. Your quote request has been submitted. We will contact you using the details you provided.';
+      quoteForm.reset();
+    }catch(error){
+      status.textContent='We could not confirm that your request was submitted. Your entries are still here. Please try again or call 906-221-6175.';
+    }finally{
+      clearTimeout(timeout);
+      sending=false;
+      submitButton.disabled=false;
+      submitButton.textContent='Send Request';
+      quoteForm.removeAttribute('aria-busy');
+      status.focus();
+    }
   });
 }
 </script>
