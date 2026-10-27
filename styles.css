@@ -1477,3 +1477,78 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
   .mission-heading h2{font-size:28px;}
   .mission-gallery{grid-template-columns:1fr;gap:13px;}
 }
+
+
+/* 3D imaging examples */
+.three-d-examples{
+  background:#edf2f4;
+  padding:64px 0 70px;
+}
+.three-d-heading{
+  max-width:790px;
+  margin-bottom:28px;
+}
+.three-d-heading h2{
+  margin:0 0 12px;
+  color:var(--navy);
+  font-size:32px;
+  line-height:1.15;
+}
+.three-d-heading p:not(.eyebrow){
+  margin:0 0 12px;
+  color:#38576b;
+  line-height:1.65;
+}
+.three-d-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.three-d-card{
+  margin:0;
+  overflow:hidden;
+  border:1px solid #cbd8df;
+  border-radius:11px;
+  background:#fff;
+  box-shadow:0 4px 14px rgba(8,43,63,.07);
+}
+.three-d-card a{
+  display:block;
+  background:#101f26;
+}
+.three-d-card img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  transition:transform .25s ease,opacity .25s ease;
+}
+.three-d-card a:hover img{
+  transform:scale(1.025);
+  opacity:.94;
+}
+.three-d-card figcaption{
+  padding:15px 16px 17px;
+}
+.three-d-card strong{
+  display:block;
+  color:var(--navy);
+  font-size:16px;
+}
+.three-d-card span{
+  display:block;
+  margin-top:5px;
+  color:#46606f;
+  font-size:13px;
+  line-height:1.45;
+}
+@media(max-width:900px){
+  .three-d-grid{grid-template-columns:1fr 1fr;}
+  .three-d-card:last-child{grid-column:1 / -1;}
+}
+@media(max-width:600px){
+  .three-d-examples{padding:46px 0 50px;}
+  .three-d-heading h2{font-size:28px;}
+  .three-d-grid{grid-template-columns:1fr;gap:13px;}
+  .three-d-card:last-child{grid-column:auto;}
+}
