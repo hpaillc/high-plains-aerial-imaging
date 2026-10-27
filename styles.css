@@ -1407,3 +1407,73 @@ footer{background:#0f3045;color:#cbdce5;padding:32px 0 14px}.footer-grid{display
   .service-showcase .project{min-height:210px;}
   .service-showcase .project > div{padding:24px 21px;}
 }
+
+
+/* Real mission gallery */
+.mission-case-study{
+  background:#fff;
+  padding:64px 0 70px;
+}
+.mission-heading{
+  max-width:760px;
+  margin-bottom:28px;
+}
+.mission-heading h2{
+  margin:0 0 12px;
+  color:var(--navy);
+  font-size:32px;
+  line-height:1.15;
+}
+.mission-heading p:not(.eyebrow){
+  margin:0;
+  color:#38576b;
+  line-height:1.65;
+}
+.mission-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+.mission-card{
+  margin:0;
+  overflow:hidden;
+  border:1px solid #d5dfe5;
+  border-radius:11px;
+  background:#fff;
+  box-shadow:0 4px 14px rgba(8,43,63,.07);
+}
+.mission-card a{
+  display:block;
+  background:#173247;
+}
+.mission-card img{
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  transition:transform .25s ease,opacity .25s ease;
+}
+.mission-card a:hover img{
+  transform:scale(1.025);
+  opacity:.94;
+}
+.mission-card figcaption{
+  padding:15px 17px 17px;
+}
+.mission-card strong{
+  display:block;
+  color:var(--navy);
+  font-size:16px;
+}
+.mission-card span{
+  display:block;
+  margin-top:5px;
+  color:#46606f;
+  font-size:13px;
+  line-height:1.45;
+}
+@media(max-width:600px){
+  .mission-case-study{padding:46px 0 50px;}
+  .mission-heading h2{font-size:28px;}
+  .mission-gallery{grid-template-columns:1fr;gap:13px;}
+}
