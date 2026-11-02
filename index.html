@@ -586,63 +586,10 @@
     </div>
 
     <div class="quote-box">
-      <form id="quote-form" class="v53-quote-form" action="https://formspree.io/f/meaaalqa" method="POST">
-        <input type="hidden" name="_subject" value="High Plains Aerial Imaging Quote Request">
-
-        <label>
-          FULL NAME
-          <input type="text" name="name" placeholder="Your name" required>
-        </label>
-
-        <label>
-          COMPANY
-          <input type="text" name="company" placeholder="Company name">
-        </label>
-
-        <label>
-          PHONE
-          <input type="tel" name="phone" placeholder="Your phone number" required>
-        </label>
-
-        <label>
-          EMAIL
-          <input type="email" name="email" placeholder="Your email address" required>
-        </label>
-
-        <label>
-          SERVICE NEEDED
-          <select name="service" required>
-            <option value="">Select a service</option>
-            <option>Agriculture &amp; Drone Spraying</option>
-            <option>Agricultural Thermal Crop Health Imaging</option>
-            <option>Oil &amp; Gas / Pipeline</option>
-            <option>Construction</option>
-            <option>Thermal Inspections</option>
-            <option>Mapping &amp; Photogrammetry</option>
-            <option>Ranching &amp; Livestock</option>
-            <option>Real Estate</option>
-            <option>Commercial Inspections</option>
-            <option>Other</option>
-          </select>
-        </label>
-
-        <label>
-          PROJECT LOCATION
-          <input type="text" name="location" placeholder="City, county or project location">
-        </label>
-
-        <label>
-          PROJECT DETAILS
-          <textarea name="details" placeholder="Tell us what you need documented..." required></textarea>
-        </label>
-
-        <button class="button primary big" type="submit">Send Request</button>
-
-        <small>We use the information you provide to respond to your request. We do not sell it. <a href="privacy.html">Read our Privacy Policy.</a></small>
-        <p id="quote-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
-        <noscript><small>After submitting, follow the confirmation or verification instructions on Formspree.</small></noscript>
-
-      </form>
+      <script src="https://js-na2.hsforms.net/forms/embed/247872141.js" defer></script>
+      <div class="hs-form-frame" data-region="na2" data-form-id="fe9786f8-ab44-4f1e-a049-9b7818e31f9c" data-portal-id="247872141"></div>
+      <p class="muted">If the form does not load, <a href="https://43krd9.share-na2.hsforms.com/2_peG-KtETx6gSZt4GOMfnA">open our quote request form</a> or call <a href="tel:19062216175">906-221-6175</a>.</p>
+      <small>We use the information you provide to respond to your request. We do not sell it. <a href="privacy.html">Read our Privacy Policy.</a></small>
     </div>
   </div>
 </section>
@@ -651,69 +598,6 @@
 <script>
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
 
-const quoteForm=document.getElementById('quote-form');
-  
-const serviceParam=new URLSearchParams(window.location.search).get('service');
-const serviceMap={
-  agriculture:'Agriculture & Drone Spraying',
-  'ag-thermal':'Agricultural Thermal Crop Health Imaging',
-  energy:'Oil & Gas / Pipeline',
-  thermal:'Thermal Inspections',
-  construction:'Construction',
-  mapping:'Mapping & Photogrammetry',
-  ranching:'Ranching & Livestock',
-  'real-estate':'Real Estate',
-  enterprise:'Commercial Inspections'
-};
-const serviceSelect=quoteForm.querySelector('[name="service"]');
-
-if(serviceSelect && serviceMap[serviceParam]){
-  const targetService=serviceMap[serviceParam];
-
-  [...serviceSelect.options].forEach(option=>{
-    if(option.textContent.trim()===targetService){
-      option.selected=true;
-    }
-  });
-}
-
-if(quoteForm){
-  const submitButton=quoteForm.querySelector('[type="submit"]');
-  const status=document.getElementById('quote-status');
-  let sending=false;
-  quoteForm.addEventListener('submit',async function(e){
-    e.preventDefault();
-    if(sending || !quoteForm.reportValidity()) return;
-    sending=true;
-    submitButton.disabled=true;
-    submitButton.textContent='Sending…';
-    quoteForm.setAttribute('aria-busy','true');
-    status.hidden=false;
-    status.textContent='Sending your request…';
-    const controller=new AbortController();
-    const timeout=setTimeout(()=>controller.abort(),30000);
-    try{
-      const response=await fetch(quoteForm.action,{
-        method:'POST',
-        body:new FormData(quoteForm),
-        headers:{Accept:'application/json'},
-        signal:controller.signal
-      });
-      if(!response.ok) throw new Error('Submission rejected');
-      status.textContent='Thank you. Your quote request has been submitted. We will contact you using the details you provided.';
-      quoteForm.reset();
-    }catch(error){
-      status.textContent='We could not confirm that your request was submitted. Your entries are still here. Please try again or call 906-221-6175.';
-    }finally{
-      clearTimeout(timeout);
-      sending=false;
-      submitButton.disabled=false;
-      submitButton.textContent='Send Request';
-      quoteForm.removeAttribute('aria-busy');
-      status.focus();
-    }
-  });
-}
 </script>
 </body>
 </html>
